@@ -1,0 +1,21 @@
+Installation:
+
+1. Upload all files to your server
+2. Install snippet.getImagelist.php
+
+Usage:
+
+1. Create TV with input-type 'multiitems'
+add in input-option-values your fieldnames and fieldcaptions
+example 1 (name=caption):
+name||description||price1||textprice1||price2||textprice2
+
+example 2 (name and description)
+name:Name||description:Description||price1:Price A||textprice1:Text Price A||price2:Price B||textprice2:Text Price B
+
+create chunk, see included example
+
+calls:
+[[!getImageList? &tvname=`menueitems`&tpl=`menueitem`]]
+[[!getImageList? &tvname=`menueitems`&tpl=`menueitem`&docid=`xxx`]]
+<ul>[[!getImageList? &tvname=`myTV`&tpl=`@CODE:<li><img src="[[+imageURL]]"/><p>[[+imageAlt]]</p></li>`]]</ul>

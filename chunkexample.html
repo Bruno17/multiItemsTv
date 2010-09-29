@@ -1,0 +1,13 @@
+<h2>[[+name]]</h2>
+<table>
+[[If? 
+&subject=`[[+price2]]` 
+&operator=`notempty` 
+&then=`
+<tr><td colspan="2">[[+description]]</td></tr>
+<tr><td>[[+pricetext1]]</td><td>[[+price1]]</td></tr>
+<tr><td>[[+pricetext2]]</td><td>[[+price2]]</td></tr>
+`&else=`
+<tr><td>[[+description]]</td><td>[[+price1]]</td></tr>
+`]]
+</table>
