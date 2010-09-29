@@ -47,7 +47,7 @@
 				xtype: 'fieldset'
 				,collapsible: false
                 //,collapsed: config.toggleCb=='on'?false:true
-				,collapsed: true
+				,collapsed: false
 				,checkboxToggle: true
 				,checkboxName: 'tv'+this.tvid+'_toggleCb_'+config.itemid
                 ,autoHeight: true
